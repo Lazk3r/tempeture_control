@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tempeture_control
-Fri Dec  9 21:15:23 2022
+Fri Dec  9 23:14:06 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -21,9 +21,12 @@ Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
  14. Parameter Settings for User Entity Instance: adc_control:inst|adc_control_adc_mega_0:adc_mega_0
  15. Parameter Settings for User Entity Instance: adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+ 16. Parameter Settings for Inferred Entity Instance: tocelsius:inst3|lpm_mult:Mult0
+ 17. Parameter Settings for Inferred Entity Instance: tocelsius:inst3|lpm_divide:Div0
+ 18. lpm_mult Parameter Settings by Entity Instance
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -50,16 +53,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec  9 21:15:23 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec  9 23:14:06 2022       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; tempeture_control                           ;
 ; Top-level Entity Name              ; tempeture_control                           ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 90                                          ;
-;     Total combinational functions  ; 66                                          ;
+; Total logic elements               ; 338                                         ;
+;     Total combinational functions  ; 314                                         ;
 ;     Dedicated logic registers      ; 66                                          ;
 ; Total registers                    ; 66                                          ;
-; Total pins                         ; 18                                          ;
+; Total pins                         ; 30                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -166,7 +169,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -175,10 +179,42 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                                                                         ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                             ; Library     ;
 +----------------------------------------------------------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+-------------+
+; tocelsius.vhd                                                                                            ; yes             ; User VHDL File                     ; /home/lazk3r/Documents/quartus/tempeture_control/tocelsius.vhd                                           ;             ;
 ; adc_control/synthesis/tempeture_control.bdf                                                              ; yes             ; User Block Diagram/Schematic File  ; /home/lazk3r/Documents/quartus/tempeture_control/adc_control/synthesis/tempeture_control.bdf             ;             ;
 ; /home/lazk3r/Documents/quartus/tempeture_control/db/ip/adc_control/adc_control.v                         ; yes             ; Auto-Found Verilog HDL File        ; /home/lazk3r/Documents/quartus/tempeture_control/db/ip/adc_control/adc_control.v                         ; adc_control ;
 ; /home/lazk3r/Documents/quartus/tempeture_control/db/ip/adc_control/submodules/adc_control_adc_mega_0.v   ; yes             ; Auto-Found Verilog HDL File        ; /home/lazk3r/Documents/quartus/tempeture_control/db/ip/adc_control/submodules/adc_control_adc_mega_0.v   ; adc_control ;
 ; /home/lazk3r/Documents/quartus/tempeture_control/db/ip/adc_control/submodules/altera_up_avalon_adv_adc.v ; yes             ; Auto-Found Verilog HDL File        ; /home/lazk3r/Documents/quartus/tempeture_control/db/ip/adc_control/submodules/altera_up_avalon_adv_adc.v ; adc_control ;
+; lpm_mult.tdf                                                                                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_mult.tdf                                         ;             ;
+; aglobal211.inc                                                                                           ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/aglobal211.inc                                       ;             ;
+; lpm_add_sub.inc                                                                                          ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                      ;             ;
+; multcore.inc                                                                                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/multcore.inc                                         ;             ;
+; bypassff.inc                                                                                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/bypassff.inc                                         ;             ;
+; altshift.inc                                                                                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/altshift.inc                                         ;             ;
+; multcore.tdf                                                                                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/multcore.tdf                                         ;             ;
+; csa_add.inc                                                                                              ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/csa_add.inc                                          ;             ;
+; mpar_add.inc                                                                                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/mpar_add.inc                                         ;             ;
+; muleabz.inc                                                                                              ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/muleabz.inc                                          ;             ;
+; mul_lfrg.inc                                                                                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/mul_lfrg.inc                                         ;             ;
+; mul_boothc.inc                                                                                           ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/mul_boothc.inc                                       ;             ;
+; alt_ded_mult.inc                                                                                         ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/alt_ded_mult.inc                                     ;             ;
+; alt_ded_mult_y.inc                                                                                       ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                                   ;             ;
+; dffpipe.inc                                                                                              ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/dffpipe.inc                                          ;             ;
+; mpar_add.tdf                                                                                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/mpar_add.tdf                                         ;             ;
+; lpm_add_sub.tdf                                                                                          ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_add_sub.tdf                                      ;             ;
+; addcore.inc                                                                                              ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/addcore.inc                                          ;             ;
+; look_add.inc                                                                                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/look_add.inc                                         ;             ;
+; alt_stratix_add_sub.inc                                                                                  ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                              ;             ;
+; db/add_sub_kgh.tdf                                                                                       ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/tempeture_control/db/add_sub_kgh.tdf                                      ;             ;
+; db/add_sub_ogh.tdf                                                                                       ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/tempeture_control/db/add_sub_ogh.tdf                                      ;             ;
+; altshift.tdf                                                                                             ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/altshift.tdf                                         ;             ;
+; lpm_divide.tdf                                                                                           ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_divide.tdf                                       ;             ;
+; abs_divider.inc                                                                                          ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/abs_divider.inc                                      ;             ;
+; sign_div_unsign.inc                                                                                      ; yes             ; Megafunction                       ; /opt/intelFPGA/21.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                  ;             ;
+; db/lpm_divide_gkm.tdf                                                                                    ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/tempeture_control/db/lpm_divide_gkm.tdf                                   ;             ;
+; db/sign_div_unsign_8nh.tdf                                                                               ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/tempeture_control/db/sign_div_unsign_8nh.tdf                              ;             ;
+; db/alt_u_div_4af.tdf                                                                                     ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/tempeture_control/db/alt_u_div_4af.tdf                                    ;             ;
+; db/add_sub_7pc.tdf                                                                                       ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/tempeture_control/db/add_sub_7pc.tdf                                      ;             ;
+; db/add_sub_8pc.tdf                                                                                       ; yes             ; Auto-Generated Megafunction        ; /home/lazk3r/Documents/quartus/tempeture_control/db/add_sub_8pc.tdf                                      ;             ;
 +----------------------------------------------------------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+-------------+
 
 
@@ -187,43 +223,56 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 90             ;
+; Estimated Total logic elements              ; 338            ;
 ;                                             ;                ;
-; Total combinational functions               ; 66             ;
+; Total combinational functions               ; 314            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 25             ;
-;     -- 3 input functions                    ; 12             ;
-;     -- <=2 input functions                  ; 29             ;
+;     -- 4 input functions                    ; 79             ;
+;     -- 3 input functions                    ; 91             ;
+;     -- <=2 input functions                  ; 144            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 59             ;
-;     -- arithmetic mode                      ; 7              ;
+;     -- normal mode                          ; 211            ;
+;     -- arithmetic mode                      ; 103            ;
 ;                                             ;                ;
 ; Total registers                             ; 66             ;
 ;     -- Dedicated logic registers            ; 66             ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
-; I/O pins                                    ; 18             ;
+; I/O pins                                    ; 30             ;
 ;                                             ;                ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 66             ;
-; Total fan-out                               ; 425            ;
-; Average fan-out                             ; 2.53           ;
+; Total fan-out                               ; 1097           ;
+; Average fan-out                             ; 2.49           ;
 +---------------------------------------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                         ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+--------------------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                     ; Entity Name              ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+--------------------------+--------------+
-; |tempeture_control                           ; 66 (1)              ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |tempeture_control                                                                                      ; tempeture_control        ; work         ;
-;    |adc_control:inst|                        ; 65 (0)              ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|adc_control:inst                                                                     ; adc_control              ; adc_control  ;
-;       |adc_control_adc_mega_0:adc_mega_0|    ; 65 (14)             ; 66 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0                                   ; adc_control_adc_mega_0   ; adc_control  ;
-;          |altera_up_avalon_adv_adc:ADC_CTRL| ; 51 (51)             ; 53 (53)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL ; altera_up_avalon_adv_adc ; adc_control  ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+--------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                ;
++---------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
+; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                       ; Entity Name              ; Library Name ;
++---------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
+; |tempeture_control                                ; 314 (1)             ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |tempeture_control                                                                                                                                        ; tempeture_control        ; work         ;
+;    |adc_control:inst|                             ; 64 (0)              ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|adc_control:inst                                                                                                                       ; adc_control              ; adc_control  ;
+;       |adc_control_adc_mega_0:adc_mega_0|         ; 64 (14)             ; 66 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0                                                                                     ; adc_control_adc_mega_0   ; adc_control  ;
+;          |altera_up_avalon_adv_adc:ADC_CTRL|      ; 50 (50)             ; 53 (53)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL                                                   ; altera_up_avalon_adv_adc ; adc_control  ;
+;    |tocelsius:inst3|                              ; 249 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3                                                                                                                        ; tocelsius                ; work         ;
+;       |lpm_divide:Div0|                           ; 213 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_divide:Div0                                                                                                        ; lpm_divide               ; work         ;
+;          |lpm_divide_gkm:auto_generated|          ; 213 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_divide:Div0|lpm_divide_gkm:auto_generated                                                                          ; lpm_divide_gkm           ; work         ;
+;             |sign_div_unsign_8nh:divider|         ; 213 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_divide:Div0|lpm_divide_gkm:auto_generated|sign_div_unsign_8nh:divider                                              ; sign_div_unsign_8nh      ; work         ;
+;                |alt_u_div_4af:divider|            ; 213 (213)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_divide:Div0|lpm_divide_gkm:auto_generated|sign_div_unsign_8nh:divider|alt_u_div_4af:divider                        ; alt_u_div_4af            ; work         ;
+;       |lpm_mult:Mult0|                            ; 36 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_mult:Mult0                                                                                                         ; lpm_mult                 ; work         ;
+;          |multcore:mult_core|                     ; 36 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core                                                                                      ; multcore                 ; work         ;
+;             |mpar_add:padder|                     ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                      ; mpar_add                 ; work         ;
+;                |lpm_add_sub:adder[0]|             ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; lpm_add_sub              ; work         ;
+;                   |add_sub_kgh:auto_generated|    ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_kgh:auto_generated                      ; add_sub_kgh              ; work         ;
+;                |mpar_add:sub_par_add|             ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; mpar_add                 ; work         ;
+;                   |lpm_add_sub:adder[0]|          ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; lpm_add_sub              ; work         ;
+;                      |add_sub_ogh:auto_generated| ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tempeture_control|tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_ogh:auto_generated ; add_sub_ogh              ; work         ;
++---------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -284,7 +333,7 @@ Encoding Type:  One-Hot
 ; adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|counter[0] ; 2       ;
 ; adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|counter[1] ; 2       ;
 ; adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|counter[2] ; 2       ;
-; adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|sclk       ; 7       ;
+; adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|sclk       ; 5       ;
 ; Total number of inverted registers = 4                                                          ;         ;
 +-------------------------------------------------------------------------------------------------+---------+
 
@@ -294,12 +343,12 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|CH0[0]                                              ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|address[0]        ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|counter[7]        ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|counter[3]        ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|sclk_counter[3]   ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|addr_shift_reg[5] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|addr_shift_reg[2] ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|addr_shift_reg[3] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|addr_shift_reg[1] ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|CH0[8]                                              ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |tempeture_control|adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|counter[0]        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------+
 
@@ -334,30 +383,109 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: tocelsius:inst3|lpm_mult:Mult0     ;
++------------------------------------------------+--------------+---------------------+
+; Parameter Name                                 ; Value        ; Type                ;
++------------------------------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 12           ; Untyped             ;
+; LPM_WIDTHB                                     ; 7            ; Untyped             ;
+; LPM_WIDTHP                                     ; 19           ; Untyped             ;
+; LPM_WIDTHR                                     ; 19           ; Untyped             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped             ;
+; LATENCY                                        ; 0            ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; YES          ; Untyped             ;
+; USE_EAB                                        ; OFF          ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
+; CBXI_PARAMETER                                 ; NOTHING      ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
++------------------------------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: tocelsius:inst3|lpm_divide:Div0 ;
++------------------------+----------------+----------------------------------------+
+; Parameter Name         ; Value          ; Type                                   ;
++------------------------+----------------+----------------------------------------+
+; LPM_WIDTHN             ; 24             ; Untyped                                ;
+; LPM_WIDTHD             ; 12             ; Untyped                                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_gkm ; Untyped                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
++------------------------+----------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                         ;
++---------------------------------------+--------------------------------+
+; Name                                  ; Value                          ;
++---------------------------------------+--------------------------------+
+; Number of entity instances            ; 1                              ;
+; Entity Instance                       ; tocelsius:inst3|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 12                             ;
+;     -- LPM_WIDTHB                     ; 7                              ;
+;     -- LPM_WIDTHP                     ; 19                             ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                       ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                             ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                            ;
+;     -- USE_EAB                        ; OFF                            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                           ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                             ;
++---------------------------------------+--------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 18                          ;
+; boundary_port         ; 30                          ;
 ; cycloneiii_ff         ; 66                          ;
 ;     CLR               ; 1                           ;
 ;     CLR SLD           ; 8                           ;
 ;     ENA               ; 47                          ;
 ;     plain             ; 10                          ;
-; cycloneiii_lcell_comb ; 68                          ;
-;     arith             ; 7                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 6                           ;
-;     normal            ; 61                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 18                          ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 25                          ;
+; cycloneiii_lcell_comb ; 324                         ;
+;     arith             ; 103                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 29                          ;
+;         3 data inputs ; 72                          ;
+;     normal            ; 221                         ;
+;         0 data inputs ; 9                           ;
+;         1 data inputs ; 15                          ;
+;         2 data inputs ; 99                          ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 79                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.48                        ;
+; Max LUT depth         ; 26.60                       ;
+; Average LUT depth     ; 19.03                       ;
 +-----------------------+-----------------------------+
 
 
@@ -376,22 +504,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Fri Dec  9 21:15:10 2022
+    Info: Processing started: Fri Dec  9 23:13:53 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tempeture_control -c tempeture_control
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12248): Elaborating Platform Designer system entity "adc_control.qsys"
-Info (12250): 2022.12.09.21:15:18 Progress: Loading tempeture_control/adc_control.qsys
-Info (12250): 2022.12.09.21:15:18 Progress: Reading input file
-Info (12250): 2022.12.09.21:15:18 Progress: Adding adc_mega_0 [altera_up_avalon_adc_mega 18.0]
-Info (12250): 2022.12.09.21:15:19 Progress: Parameterizing module adc_mega_0
-Info (12250): 2022.12.09.21:15:19 Progress: Building connections
-Info (12250): 2022.12.09.21:15:19 Progress: Parameterizing connections
-Info (12250): 2022.12.09.21:15:19 Progress: Validating
-Info (12250): 2022.12.09.21:15:19 Progress: Done reading input file
+Info (12250): 2022.12.09.23:14:01 Progress: Loading tempeture_control/adc_control.qsys
+Info (12250): 2022.12.09.23:14:01 Progress: Reading input file
+Info (12250): 2022.12.09.23:14:01 Progress: Adding adc_mega_0 [altera_up_avalon_adc_mega 18.0]
+Info (12250): 2022.12.09.23:14:01 Progress: Parameterizing module adc_mega_0
+Info (12250): 2022.12.09.23:14:01 Progress: Building connections
+Info (12250): 2022.12.09.23:14:01 Progress: Parameterizing connections
+Info (12250): 2022.12.09.23:14:01 Progress: Validating
+Info (12250): 2022.12.09.23:14:01 Progress: Done reading input file
 Info (12250): Adc_control: Generating adc_control "adc_control" for QUARTUS_SYNTH
 Info (12250): Adc_mega_0: Starting Generation of ADC Controller for DE-series Board
-Info (12250): Adc_mega_0: /opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v /tmp/alt9336_6232781188124422685.dir/0002_sopcgen/adc_control_adc_mega_0.v
+Info (12250): Adc_mega_0: /opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v /tmp/alt9336_7914899346104046024.dir/0002_sopcgen/adc_control_adc_mega_0.v
 Info (12250): Adc_mega_0: "adc_control" instantiated altera_up_avalon_adc_mega "adc_mega_0"
 Info (12250): Adc_control: Done "adc_control" with 2 modules, 3 files
 Info (12249): Finished elaborating Platform Designer system entity "adc_control.qsys"
@@ -410,19 +538,77 @@ Info (12127): Elaborating entity "tempeture_control" for the top level hierarchy
 Info (12128): Elaborating entity "adc_control" for hierarchy "adc_control:inst"
 Info (12128): Elaborating entity "adc_control_adc_mega_0" for hierarchy "adc_control:inst|adc_control_adc_mega_0:adc_mega_0" File: /home/lazk3r/Documents/quartus/tempeture_control/db/ip/adc_control/adc_control.v Line: 45
 Info (12128): Elaborating entity "altera_up_avalon_adv_adc" for hierarchy "adc_control:inst|adc_control_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL" File: /home/lazk3r/Documents/quartus/tempeture_control/db/ip/adc_control/submodules/adc_control_adc_mega_0.v Line: 58
+Info (12128): Elaborating entity "tocelsius" for hierarchy "tocelsius:inst3"
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "tocelsius:inst3|Mult0" File: /opt/intelFPGA/21.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "tocelsius:inst3|Div0" File: /home/lazk3r/Documents/quartus/tempeture_control/tocelsius.vhd Line: 17
+Info (12130): Elaborated megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0" File: /opt/intelFPGA/21.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
+Info (12133): Instantiated megafunction "tocelsius:inst3|lpm_mult:Mult0" with the following parameter: File: /opt/intelFPGA/21.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
+    Info (12134): Parameter "LPM_WIDTHA" = "12"
+    Info (12134): Parameter "LPM_WIDTHB" = "7"
+    Info (12134): Parameter "LPM_WIDTHP" = "19"
+    Info (12134): Parameter "LPM_WIDTHR" = "19"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
+Info (12131): Elaborated megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/multcore.tdf Line: 229
+Info (12131): Elaborated megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_kgh.tdf
+    Info (12023): Found entity 1: add_sub_kgh File: /home/lazk3r/Documents/quartus/tempeture_control/db/add_sub_kgh.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 138
+Info (12131): Elaborated megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_ogh.tdf
+    Info (12023): Found entity 1: add_sub_ogh File: /home/lazk3r/Documents/quartus/tempeture_control/db/add_sub_ogh.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "tocelsius:inst3|lpm_mult:Mult0" File: /opt/intelFPGA/21.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+Info (12130): Elaborated megafunction instantiation "tocelsius:inst3|lpm_divide:Div0" File: /home/lazk3r/Documents/quartus/tempeture_control/tocelsius.vhd Line: 17
+Info (12133): Instantiated megafunction "tocelsius:inst3|lpm_divide:Div0" with the following parameter: File: /home/lazk3r/Documents/quartus/tempeture_control/tocelsius.vhd Line: 17
+    Info (12134): Parameter "LPM_WIDTHN" = "24"
+    Info (12134): Parameter "LPM_WIDTHD" = "12"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_gkm.tdf
+    Info (12023): Found entity 1: lpm_divide_gkm File: /home/lazk3r/Documents/quartus/tempeture_control/db/lpm_divide_gkm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_8nh File: /home/lazk3r/Documents/quartus/tempeture_control/db/sign_div_unsign_8nh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4af.tdf
+    Info (12023): Found entity 1: alt_u_div_4af File: /home/lazk3r/Documents/quartus/tempeture_control/db/alt_u_div_4af.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: /home/lazk3r/Documents/quartus/tempeture_control/db/add_sub_7pc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: /home/lazk3r/Documents/quartus/tempeture_control/db/add_sub_8pc.tdf Line: 23
 Info (13000): Registers with preset signals will power-up high File: /home/lazk3r/Documents/quartus/tempeture_control/db/ip/adc_control/submodules/altera_up_avalon_adv_adc.v Line: 28
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "celcius[23]" is stuck at GND
+    Warning (13410): Pin "celcius[22]" is stuck at GND
+    Warning (13410): Pin "celcius[21]" is stuck at GND
+    Warning (13410): Pin "celcius[20]" is stuck at GND
+    Warning (13410): Pin "celcius[19]" is stuck at GND
+    Warning (13410): Pin "celcius[18]" is stuck at GND
+    Warning (13410): Pin "celcius[17]" is stuck at GND
+    Warning (13410): Pin "celcius[16]" is stuck at GND
+    Warning (13410): Pin "celcius[15]" is stuck at GND
+    Warning (13410): Pin "celcius[14]" is stuck at GND
+    Warning (13410): Pin "celcius[13]" is stuck at GND
+    Warning (13410): Pin "celcius[12]" is stuck at GND
+    Warning (13410): Pin "celcius[11]" is stuck at GND
+    Warning (13410): Pin "celcius[10]" is stuck at GND
+    Warning (13410): Pin "celcius[9]" is stuck at GND
+    Warning (13410): Pin "celcius[8]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 108 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 368 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 90 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 454 megabytes
-    Info: Processing ended: Fri Dec  9 21:15:23 2022
+    Info (21059): Implemented 27 output pins
+    Info (21061): Implemented 338 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 466 megabytes
+    Info: Processing ended: Fri Dec  9 23:14:06 2022
     Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:25
 

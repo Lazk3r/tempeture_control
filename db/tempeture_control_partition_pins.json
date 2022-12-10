@@ -16,51 +16,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "CH0[11]",
+					"name" : "celcius[7]",
 					"strict" : false
 				},
 				{
-					"name" : "CH0[10]",
+					"name" : "celcius[6]",
 					"strict" : false
 				},
 				{
-					"name" : "CH0[9]",
+					"name" : "celcius[5]",
 					"strict" : false
 				},
 				{
-					"name" : "CH0[8]",
+					"name" : "celcius[4]",
 					"strict" : false
 				},
 				{
-					"name" : "CH0[7]",
+					"name" : "celcius[3]",
 					"strict" : false
 				},
 				{
-					"name" : "CH0[6]",
+					"name" : "celcius[2]",
 					"strict" : false
 				},
 				{
-					"name" : "CH0[5]",
+					"name" : "celcius[1]",
 					"strict" : false
 				},
 				{
-					"name" : "CH0[4]",
-					"strict" : false
-				},
-				{
-					"name" : "CH0[3]",
-					"strict" : false
-				},
-				{
-					"name" : "CH0[2]",
-					"strict" : false
-				},
-				{
-					"name" : "CH0[1]",
-					"strict" : false
-				},
-				{
-					"name" : "CH0[0]",
+					"name" : "celcius[0]",
 					"strict" : false
 				},
 				{

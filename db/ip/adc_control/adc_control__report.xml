@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2022.12.09.21:15:21"
+ date="2022.12.09.23:14:03"
  outputDirectory="/home/lazk3r/Documents/quartus/tempeture_control/db/ip/adc_control/">
  <perimeter>
   <parameter
@@ -85,13 +85,13 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="adc_control:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP4CE22F17C6,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1670638519,AUTO_UNIQUE_ID=(altera_up_avalon_adc_mega:18.0:AUTO_CLK_CLOCK_RATE=0,AUTO_DEVICE_FAMILY=Cyclone IV E,board=DE0-Nano,board_rev=Autodetect,max10plldivby=1,max10pllmultby=1,numch=8,numch_=8,sclk_freq=3.2,sys_clk_freq=50,tsclk=16)"
+   parameterizationKey="adc_control:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP4CE22F17C6,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1670645641,AUTO_UNIQUE_ID=(altera_up_avalon_adc_mega:18.0:AUTO_CLK_CLOCK_RATE=0,AUTO_DEVICE_FAMILY=Cyclone IV E,board=DE0-Nano,board_rev=Autodetect,max10plldivby=1,max10pllmultby=1,numch=8,numch_=8,sclk_freq=3.2,sys_clk_freq=50,tsclk=16)"
    instancePathKey="adc_control"
    kind="adc_control"
    version="1.0"
    name="adc_control">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1670638519" />
+  <parameter name="AUTO_GENERATION_ID" value="1670645641" />
   <parameter name="AUTO_DEVICE" value="EP4CE22F17C6" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
@@ -138,13 +138,13 @@
    <message level="Debug" culprit="adc_control"><![CDATA["<b>adc_control</b>" reuses <b>altera_up_avalon_adc_mega</b> "<b>submodules/adc_control_adc_mega_0</b>"]]></message>
    <message level="Debug" culprit="adc_control">queue size: 0 starting:altera_up_avalon_adc_mega "submodules/adc_control_adc_mega_0"</message>
    <message level="Info" culprit="adc_mega_0">Starting Generation of ADC Controller for DE-series Board</message>
-   <message level="Info" culprit="adc_mega_0">/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v /tmp/alt9336_6232781188124422685.dir/0002_sopcgen/adc_control_adc_mega_0.v</message>
+   <message level="Info" culprit="adc_mega_0">/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v /tmp/alt9336_7914899346104046024.dir/0002_sopcgen/adc_control_adc_mega_0.v</message>
    <message level="Debug">set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files</message>
-   <message level="Debug">Command: /opt/intelFPGA/21.1/quartus/linux64/quartus_map not_a_project --generate_hdl_interface=/tmp/alt9336_6232781188124422685.dir/0002_sopcgen/adc_control_adc_mega_0.v --source=/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v --source=/tmp/alt9336_6232781188124422685.dir/0002_sopcgen/adc_control_adc_mega_0.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt9336_6232781188124422685.dir/0003_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
-   <message level="Debug">Command took 0.839s</message>
+   <message level="Debug">Command: /opt/intelFPGA/21.1/quartus/linux64/quartus_map not_a_project --generate_hdl_interface=/tmp/alt9336_7914899346104046024.dir/0002_sopcgen/adc_control_adc_mega_0.v --source=/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v --source=/tmp/alt9336_7914899346104046024.dir/0002_sopcgen/adc_control_adc_mega_0.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt9336_7914899346104046024.dir/0003_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
+   <message level="Debug">Command took 0.823s</message>
    <message level="Debug">set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files</message>
-   <message level="Debug">Command: /opt/intelFPGA/21.1/quartus/linux64/quartus_map not_a_project --generate_hdl_interface=/tmp/alt9336_6232781188124422685.dir/0002_sopcgen/adc_control_adc_mega_0.v --source=/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v --source=/tmp/alt9336_6232781188124422685.dir/0002_sopcgen/adc_control_adc_mega_0.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt9336_6232781188124422685.dir/0004_sopcqmap/ --set=HDL_INTERFACE_INSTANCE_NAME=inst --set=HDL_INTERFACE_INSTANCE_ENTITY=adc_control_adc_mega_0 --set=HDL_INTERFACE_INSTANCE_PARAMETERS=board=S"DE0-Nano";board_rev=S"Autodetect";tsclk=D"16";numch=D"8";max10pllmultby=D"1";max10plldivby=D"1"; --ini=disable_check_quartus_compatibility_qsys_only=on</message>
-   <message level="Debug">Command took 0.840s</message>
+   <message level="Debug">Command: /opt/intelFPGA/21.1/quartus/linux64/quartus_map not_a_project --generate_hdl_interface=/tmp/alt9336_7914899346104046024.dir/0002_sopcgen/adc_control_adc_mega_0.v --source=/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v --source=/tmp/alt9336_7914899346104046024.dir/0002_sopcgen/adc_control_adc_mega_0.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt9336_7914899346104046024.dir/0004_sopcqmap/ --set=HDL_INTERFACE_INSTANCE_NAME=inst --set=HDL_INTERFACE_INSTANCE_ENTITY=adc_control_adc_mega_0 --set=HDL_INTERFACE_INSTANCE_PARAMETERS=board=S"DE0-Nano";board_rev=S"Autodetect";tsclk=D"16";numch=D"8";max10pllmultby=D"1";max10plldivby=D"1"; --ini=disable_check_quartus_compatibility_qsys_only=on</message>
+   <message level="Debug">Command took 0.808s</message>
    <message level="Info" culprit="adc_mega_0"><![CDATA["<b>adc_control</b>" instantiated <b>altera_up_avalon_adc_mega</b> "<b>adc_mega_0</b>"]]></message>
   </messages>
  </entity>
@@ -186,13 +186,13 @@
   <messages>
    <message level="Debug" culprit="adc_control">queue size: 0 starting:altera_up_avalon_adc_mega "submodules/adc_control_adc_mega_0"</message>
    <message level="Info" culprit="adc_mega_0">Starting Generation of ADC Controller for DE-series Board</message>
-   <message level="Info" culprit="adc_mega_0">/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v /tmp/alt9336_6232781188124422685.dir/0002_sopcgen/adc_control_adc_mega_0.v</message>
+   <message level="Info" culprit="adc_mega_0">/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v /tmp/alt9336_7914899346104046024.dir/0002_sopcgen/adc_control_adc_mega_0.v</message>
    <message level="Debug">set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files</message>
-   <message level="Debug">Command: /opt/intelFPGA/21.1/quartus/linux64/quartus_map not_a_project --generate_hdl_interface=/tmp/alt9336_6232781188124422685.dir/0002_sopcgen/adc_control_adc_mega_0.v --source=/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v --source=/tmp/alt9336_6232781188124422685.dir/0002_sopcgen/adc_control_adc_mega_0.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt9336_6232781188124422685.dir/0003_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
-   <message level="Debug">Command took 0.839s</message>
+   <message level="Debug">Command: /opt/intelFPGA/21.1/quartus/linux64/quartus_map not_a_project --generate_hdl_interface=/tmp/alt9336_7914899346104046024.dir/0002_sopcgen/adc_control_adc_mega_0.v --source=/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v --source=/tmp/alt9336_7914899346104046024.dir/0002_sopcgen/adc_control_adc_mega_0.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt9336_7914899346104046024.dir/0003_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
+   <message level="Debug">Command took 0.823s</message>
    <message level="Debug">set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files</message>
-   <message level="Debug">Command: /opt/intelFPGA/21.1/quartus/linux64/quartus_map not_a_project --generate_hdl_interface=/tmp/alt9336_6232781188124422685.dir/0002_sopcgen/adc_control_adc_mega_0.v --source=/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v --source=/tmp/alt9336_6232781188124422685.dir/0002_sopcgen/adc_control_adc_mega_0.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt9336_6232781188124422685.dir/0004_sopcqmap/ --set=HDL_INTERFACE_INSTANCE_NAME=inst --set=HDL_INTERFACE_INSTANCE_ENTITY=adc_control_adc_mega_0 --set=HDL_INTERFACE_INSTANCE_PARAMETERS=board=S"DE0-Nano";board_rev=S"Autodetect";tsclk=D"16";numch=D"8";max10pllmultby=D"1";max10plldivby=D"1"; --ini=disable_check_quartus_compatibility_qsys_only=on</message>
-   <message level="Debug">Command took 0.840s</message>
+   <message level="Debug">Command: /opt/intelFPGA/21.1/quartus/linux64/quartus_map not_a_project --generate_hdl_interface=/tmp/alt9336_7914899346104046024.dir/0002_sopcgen/adc_control_adc_mega_0.v --source=/opt/intelFPGA/21.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v --source=/tmp/alt9336_7914899346104046024.dir/0002_sopcgen/adc_control_adc_mega_0.v --set=HDL_INTERFACE_OUTPUT_PATH=/tmp/alt9336_7914899346104046024.dir/0004_sopcqmap/ --set=HDL_INTERFACE_INSTANCE_NAME=inst --set=HDL_INTERFACE_INSTANCE_ENTITY=adc_control_adc_mega_0 --set=HDL_INTERFACE_INSTANCE_PARAMETERS=board=S"DE0-Nano";board_rev=S"Autodetect";tsclk=D"16";numch=D"8";max10pllmultby=D"1";max10plldivby=D"1"; --ini=disable_check_quartus_compatibility_qsys_only=on</message>
+   <message level="Debug">Command took 0.808s</message>
    <message level="Info" culprit="adc_mega_0"><![CDATA["<b>adc_control</b>" instantiated <b>altera_up_avalon_adc_mega</b> "<b>adc_mega_0</b>"]]></message>
   </messages>
  </entity>

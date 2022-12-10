@@ -5,18 +5,30 @@ ADC_SDAT => adc_control:inst.ADC_DOUT
 KEY0 => adc_control:inst.RESET
 ADC_CS_N <= adc_control:inst.ADC_CS_N
 ADC_SADDR <= adc_control:inst.ADC_DIN
-CH0[0] <= adc_control:inst.CH0[0]
-CH0[1] <= adc_control:inst.CH0[1]
-CH0[2] <= adc_control:inst.CH0[2]
-CH0[3] <= adc_control:inst.CH0[3]
-CH0[4] <= adc_control:inst.CH0[4]
-CH0[5] <= adc_control:inst.CH0[5]
-CH0[6] <= adc_control:inst.CH0[6]
-CH0[7] <= adc_control:inst.CH0[7]
-CH0[8] <= adc_control:inst.CH0[8]
-CH0[9] <= adc_control:inst.CH0[9]
-CH0[10] <= adc_control:inst.CH0[10]
-CH0[11] <= adc_control:inst.CH0[11]
+celcius[0] <= tocelsius:inst3.celsiusData[0]
+celcius[1] <= tocelsius:inst3.celsiusData[1]
+celcius[2] <= tocelsius:inst3.celsiusData[2]
+celcius[3] <= tocelsius:inst3.celsiusData[3]
+celcius[4] <= tocelsius:inst3.celsiusData[4]
+celcius[5] <= tocelsius:inst3.celsiusData[5]
+celcius[6] <= tocelsius:inst3.celsiusData[6]
+celcius[7] <= tocelsius:inst3.celsiusData[7]
+celcius[8] <= tocelsius:inst3.celsiusData[8]
+celcius[9] <= tocelsius:inst3.celsiusData[9]
+celcius[10] <= tocelsius:inst3.celsiusData[10]
+celcius[11] <= tocelsius:inst3.celsiusData[11]
+celcius[12] <= tocelsius:inst3.celsiusData[12]
+celcius[13] <= tocelsius:inst3.celsiusData[13]
+celcius[14] <= tocelsius:inst3.celsiusData[14]
+celcius[15] <= tocelsius:inst3.celsiusData[15]
+celcius[16] <= tocelsius:inst3.celsiusData[16]
+celcius[17] <= tocelsius:inst3.celsiusData[17]
+celcius[18] <= tocelsius:inst3.celsiusData[18]
+celcius[19] <= tocelsius:inst3.celsiusData[19]
+celcius[20] <= tocelsius:inst3.celsiusData[20]
+celcius[21] <= tocelsius:inst3.celsiusData[21]
+celcius[22] <= tocelsius:inst3.celsiusData[22]
+celcius[23] <= tocelsius:inst3.celsiusData[23]
 
 
 |tempeture_control|adc_control:inst
@@ -486,5 +498,44 @@ reading7[8] <= reading7[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 reading7[9] <= reading7[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 reading7[10] <= reading7[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 reading7[11] <= reading7[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tempeture_control|tocelsius:inst3
+adcReading[0] => Mult0.IN18
+adcReading[1] => Mult0.IN17
+adcReading[2] => Mult0.IN16
+adcReading[3] => Mult0.IN15
+adcReading[4] => Mult0.IN14
+adcReading[5] => Mult0.IN13
+adcReading[6] => Mult0.IN12
+adcReading[7] => Mult0.IN11
+adcReading[8] => Mult0.IN10
+adcReading[9] => Mult0.IN9
+adcReading[10] => Mult0.IN8
+adcReading[11] => Mult0.IN7
+celsiusData[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[4] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[5] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[6] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[7] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[8] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[9] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[10] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[11] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[12] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[13] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[14] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[15] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[16] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[17] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[18] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[19] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[20] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[21] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[22] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+celsiusData[23] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 
 
