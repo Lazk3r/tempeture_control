@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Dec  9 21:15:28 2022
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Revision Name : tempeture_control
+Top-level Entity Name : tempeture_control
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 89 / 22,320 ( < 1 % )
+    Total combinational functions : 67 / 22,320 ( < 1 % )
+    Dedicated logic registers : 66 / 22,320 ( < 1 % )
+Total registers : 66
+Total pins : 18 / 154 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
