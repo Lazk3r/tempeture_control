@@ -3,39 +3,147 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -1.884
-TNS   : -85.309
+Slack : -1.832
+TNS   : -85.878
+
+Type  : Slow 1200mV 85C Model Setup 'set_value'
+Slack : -0.995
+TNS   : -6.523
+
+Type  : Slow 1200mV 85C Model Setup 'toggle_temp'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'updown'
+Slack : 0.318
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.345
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'toggle_temp'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'updown'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'set_value'
+Slack : 0.390
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
 TNS   : -69.000
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'set_value'
+Slack : -3.000
+TNS   : -11.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'toggle_temp'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'updown'
+Slack : -3.000
+TNS   : -4.000
+
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -1.609
-TNS   : -70.613
+Slack : -1.568
+TNS   : -71.044
+
+Type  : Slow 1200mV 0C Model Setup 'set_value'
+Slack : -0.812
+TNS   : -5.162
+
+Type  : Slow 1200mV 0C Model Setup 'toggle_temp'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'updown'
+Slack : 0.398
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.300
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'toggle_temp'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'updown'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'set_value'
+Slack : 0.347
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
 TNS   : -69.000
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'set_value'
+Slack : -3.000
+TNS   : -11.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'toggle_temp'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'updown'
+Slack : -3.000
+TNS   : -4.000
+
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -0.593
-TNS   : -20.115
+Slack : -0.556
+TNS   : -20.912
+
+Type  : Fast 1200mV 0C Model Setup 'set_value'
+Slack : -0.135
+TNS   : -0.396
+
+Type  : Fast 1200mV 0C Model Setup 'toggle_temp'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'updown'
+Slack : 0.626
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.179
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'set_value'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'toggle_temp'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'updown'
+Slack : 0.208
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -72.971
+TNS   : -72.848
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'set_value'
+Slack : -3.000
+TNS   : -11.432
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'updown'
+Slack : -3.000
+TNS   : -4.112
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'toggle_temp'
+Slack : -3.000
+TNS   : -4.101
 
 ------------------------------------------------------------

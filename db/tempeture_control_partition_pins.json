@@ -16,35 +16,75 @@
 					"strict" : false
 				},
 				{
-					"name" : "celcius[7]",
+					"name" : "motor",
 					"strict" : false
 				},
 				{
-					"name" : "celcius[6]",
+					"name" : "Q",
 					"strict" : false
 				},
 				{
-					"name" : "celcius[5]",
+					"name" : "bcd[7]",
 					"strict" : false
 				},
 				{
-					"name" : "celcius[4]",
+					"name" : "bcd[6]",
 					"strict" : false
 				},
 				{
-					"name" : "celcius[3]",
+					"name" : "bcd[5]",
 					"strict" : false
 				},
 				{
-					"name" : "celcius[2]",
+					"name" : "bcd[4]",
 					"strict" : false
 				},
 				{
-					"name" : "celcius[1]",
+					"name" : "bcd[3]",
 					"strict" : false
 				},
 				{
-					"name" : "celcius[0]",
+					"name" : "bcd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "user_value[7]",
+					"strict" : false
+				},
+				{
+					"name" : "user_value[6]",
+					"strict" : false
+				},
+				{
+					"name" : "user_value[5]",
+					"strict" : false
+				},
+				{
+					"name" : "user_value[4]",
+					"strict" : false
+				},
+				{
+					"name" : "user_value[3]",
+					"strict" : false
+				},
+				{
+					"name" : "user_value[2]",
+					"strict" : false
+				},
+				{
+					"name" : "user_value[1]",
+					"strict" : false
+				},
+				{
+					"name" : "user_value[0]",
 					"strict" : false
 				},
 				{
@@ -53,6 +93,22 @@
 				},
 				{
 					"name" : "KEY0",
+					"strict" : false
+				},
+				{
+					"name" : "set_value",
+					"strict" : false
+				},
+				{
+					"name" : "aclr",
+					"strict" : false
+				},
+				{
+					"name" : "updown",
+					"strict" : false
+				},
+				{
+					"name" : "toggle_temp",
 					"strict" : false
 				},
 				{
