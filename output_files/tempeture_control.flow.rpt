@@ -1,6 +1,6 @@
 Flow report for tempeture_control
-Fri Dec  9 23:14:17 2022
-Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Sat Dec 10 22:42:07 2022
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -41,22 +41,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Dec  9 23:14:17 2022       ;
-; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
+; Flow Status                        ; Flow Failed - Sat Dec 10 22:42:07 2022      ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; tempeture_control                           ;
 ; Top-level Entity Name              ; tempeture_control                           ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 337 / 22,320 ( 2 % )                        ;
-;     Total combinational functions  ; 315 / 22,320 ( 1 % )                        ;
-;     Dedicated logic registers      ; 66 / 22,320 ( < 1 % )                       ;
-; Total registers                    ; 66                                          ;
-; Total pins                         ; 30 / 154 ( 19 % )                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/09/2022 23:13:53 ;
+; Start date & time ; 12/10/2022 22:41:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; tempeture_control   ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 929348526676.167064563306165           ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 198112233564071.167073010735480        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -101,12 +101,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 466 MB              ; 00:00:25                           ;
-; Fitter               ; 00:00:04     ; 1.0                     ; 1152 MB             ; 00:00:06                           ;
-; Assembler            ; 00:00:00     ; 1.0                     ; 360 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 528 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 609 MB              ; 00:00:00                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:33                           ;
+; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4773 MB             ; 00:00:45                           ;
+; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:45                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,11 +111,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; Lazk3r-PC        ; Arch Linux ; Arch Linux ; x86_64         ;
-; Fitter               ; Lazk3r-PC        ; Arch Linux ; Arch Linux ; x86_64         ;
-; Assembler            ; Lazk3r-PC        ; Arch Linux ; Arch Linux ; x86_64         ;
-; Timing Analyzer      ; Lazk3r-PC        ; Arch Linux ; Arch Linux ; x86_64         ;
-; EDA Netlist Writer   ; Lazk3r-PC        ; Arch Linux ; Arch Linux ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-CP2TOD9  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -127,10 +119,6 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off tempeture_control -c tempeture_control
-quartus_fit --read_settings_files=off --write_settings_files=off tempeture_control -c tempeture_control
-quartus_asm --read_settings_files=off --write_settings_files=off tempeture_control -c tempeture_control
-quartus_sta tempeture_control -c tempeture_control
-quartus_eda --read_settings_files=off --write_settings_files=off tempeture_control -c tempeture_control
 
 
 
